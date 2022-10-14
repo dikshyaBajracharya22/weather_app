@@ -24,13 +24,10 @@ class _SearchPageState extends State<SearchPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-  final weather= weatherRepo.init();
-  
-  return weather;
+    weatherRepo.initalize();
   }
-  late SharedPreferences prefs;
+
   TextEditingController cityController = TextEditingController();
   String cityname = "";
 
